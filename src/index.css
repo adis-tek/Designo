@@ -28,6 +28,69 @@ p {
   font-weight: 500;
 }
 
+input {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  margin: 0px 0px 30px 0px;
+  border-bottom: 1px rgba(255, 255, 255, 0.7) solid;
+  caret-color: white;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+input:active {
+  outline: none;
+  background: transparent;
+  width: 100%;
+  margin: 0px 0px 30px 0px;
+  border-bottom: 4px white solid;
+  caret-color: white;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+  background: transparent;
+  width: 100%;
+  margin: 0px 0px 30px 0px;
+  border-bottom: 3px white solid;
+  caret-color: white;
+  color: white;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+}
+
+input:placeholder-shown {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  padding: 5px 0px 15px 25px;
+}
+
+input[placeholder="Message"]:placeholder-shown {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0px 0px 75px 25px;
+}
+
+input:focus:required:invalid {
+  position: relative;
+  background-image: url("./assets/contact/desktop/icon-error.svg");
+  content: "Can't be empty";
+  background-position: right;
+  background-repeat: no-repeat;
+  border: 3px red solid;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
