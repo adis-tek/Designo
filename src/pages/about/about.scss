@@ -24,8 +24,9 @@
         margin: 0px 40px 0px 60px;
         .dark-circle {
           position: absolute;
-          width: 600px;
+          width: 630px;
           height: auto;
+          margin: 0px 0px 120px 0px;
         }
         .header {
           color: white;
@@ -129,6 +130,73 @@
           .talent-description {
             font-weight: 400;
             margin: 30px 0px 0px 0px;
+          }
+        }
+      }
+    }
+    .image-section-container {
+      position: relative;
+      @include styles.flexCenter(center, row);
+      width: 100%;
+      height: auto;
+      .section {
+        position: relative;
+        @include styles.flexCenter(center, column);
+        flex-grow: 0.3;
+        .designer-container {
+          width: 202px;
+          height: 202px;
+          object-fit: cover;
+          .circle1 {
+            position: absolute;
+            width: 192px;
+            height: auto;
+            z-index: -1;
+            transform: rotate(0.75turn);
+          }
+          .circle2 {
+            position: absolute;
+            width: 192px;
+            height: auto;
+            z-index: -1;
+            transform: rotate(0.5turn);
+          }
+          .circle3 {
+            position: absolute;
+            width: 192px;
+            height: auto;
+            z-index: -1;
+            transform: rotate(0.25turn);
+          }
+          .section-image {
+            width: 192px;
+            height: auto;
+            z-index: 9999;
+          }
+        }
+        .header {
+          position: relative;
+        }
+        .banner-button {
+          position: relative;
+          @include styles.flexCenter(center, row);
+          background-color: styles.$peach;
+          color: white;
+          align-self: center;
+          width: 152px;
+          height: 56px;
+          border-radius: 7.5px;
+          margin: 0px 0px 0px 0px;
+          z-index: 9999;
+          @media (max-width: styles.$screen-lg-max) {
+            margin: 0px 0px 0px 0px;
+          }
+          .button-text {
+            font-family: "Jost", sans-serif;
+            font-weight: 500;
+            font-size: 15px;
+            letter-spacing: normal;
+            text-transform: uppercase;
           }
         }
       }

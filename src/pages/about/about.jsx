@@ -5,6 +5,9 @@ import DarkCircle from '../../assets/about/desktop/bg-pattern-hero-about-desktop
 import Talent from '../../assets/about/desktop/image-world-class-talent.jpg';
 import TwoCircles from '../../assets/shared/desktop/bg-pattern-two-circles.svg';
 import RealDeal from '../../assets/about/desktop/image-real-deal.jpg';
+import Canada from '../../assets/shared/desktop/illustration-canada.svg';
+import Australia from '../../assets/shared/desktop/illustration-australia.svg';
+import UnitedKingdom from '../../assets/shared/desktop/illustration-united-kingdom.svg';
 
 function about() {
     return (
@@ -48,6 +51,43 @@ function about() {
             brand’s story and mission.</p>
         </div>
     </div>
+</div>
+
+<div className="image-section-container">
+
+<div className="section">
+<div className="designer-container">
+<img src={DarkCircle} alt="Dark Circle" className="circle1" />
+<img src={Canada} alt="Designer At Work" className="section-image" />
+</div>
+<h3 className="header">CANADA</h3>
+<button className="banner-button">
+    <h3 className="button-text">SEE LOCATION</h3>
+</button>
+</div>
+
+<div className="section">
+<div className="designer-container">
+<img src={DarkCircle} alt="Dark Circle" className="circle2" />
+<img src={Australia} alt="Designer At Work" className="section-image" />
+</div>
+<h3 className="header">AUSTRALIA</h3>
+<button className="banner-button">
+    <h3 className="button-text">SEE LOCATION</h3>
+</button>
+</div>
+
+<div className="section">
+<div className="designer-container">
+<img src={DarkCircle} alt="Dark Circle" className="circle3" />
+<img src={UnitedKingdom} alt="Designer At Work" className="section-image" />
+</div>
+<h3 className="header">UNITED KINGDOM</h3>
+<button className="banner-button">
+    <h3 className="button-text">SEE LOCATION</h3>
+</button>
+</div>
+
 </div>
 
 <div className="talent-container2">
