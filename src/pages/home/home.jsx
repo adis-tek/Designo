@@ -2,6 +2,7 @@ import React from 'react';
 import './home.scss';
 import phone from '../../assets/home/desktop/image-hero-phone.png';
 import darkCircle from '../../assets/home/desktop/bg-pattern-hero-home.svg';
+import WebDesign from '../../assets/home/desktop/image-web-design-large.jpg';
 import passionate from '../../assets/home/desktop/illustration-passionate.svg';
 import resourceful from '../../assets/home/desktop/illustration-resourceful.svg';
 import friendly from '../../assets/home/desktop/illustration-friendly.svg';
@@ -38,23 +39,23 @@ function home() {
 
             <div className="web-design">
             <div className="image-text-container">
-            <h1 className="image-text">Web Design</h1>
-            <h3 className="image-text">View Projects <img src={rightArrow} /></h3>
+            <h1 className="image-text" id="header">Web Design</h1>
+            <h3 className="image-text" id="subtitle">View Projects <img src={rightArrow} /></h3>
             </div>
             </div>
             
             <div className="app_and-graphic-container">
             <div className="app-design">
             <div className="image-text-container">
-            <h1 className="image-text">App Design</h1>
-            <h3 className="image-text">View Projects <img src={rightArrow} /></h3>
+            <h1 className="image-text" id="header">App Design</h1>
+            <h3 className="image-text" id="subtitle">View Projects <img src={rightArrow} /></h3>
             </div>
             </div>
             
             <div className="graphic-design">
             <div className="image-text-container">
-            <h1 className="image-text">Graphic Design</h1>
-            <h3 className="image-text">View Projects <img src={rightArrow} /></h3>
+            <h1 className="image-text" id="header">Graphic Design</h1>
+            <h3 className="image-text" id="subtitle">View Projects <img src={rightArrow} /></h3>
             </div>
             </div>
             </div>
