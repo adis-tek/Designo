@@ -1,6 +1,8 @@
 * {
   font-family: "Jost", sans-serif;
   border: 1px solid red;
+  margin: 0px;
+  padding: 0px;
 }
 
 h1 {
@@ -73,7 +75,7 @@ input:placeholder-shown {
   font-size: 14px;
   font-weight: 400;
   color: white;
-  padding: 5px 0px 15px 25px;
+  padding: 5px 0px 10px 25px;
 }
 
 input[placeholder="Message"]:placeholder-shown {
@@ -82,14 +84,66 @@ input[placeholder="Message"]:placeholder-shown {
   padding: 0px 0px 75px 25px;
 }
 
-input:focus:required:invalid {
+input:required:invalid {
   position: relative;
   background-image: url("./assets/contact/desktop/icon-error.svg");
   content: "Can't be empty";
   background-position: right;
   background-repeat: no-repeat;
-  border: 3px red solid;
+  margin: 0px 20px 0px 0px;
+  /* border: 3px red solid; */
+  margin: -4px 10px 0px 0px;
 }
+
+input[placeholder="Message"]:required:invalid {
+  position: relative;
+  background-image: url("./assets/contact/desktop/icon-error.svg");
+  content: "Can't be empty";
+  background-position: right;
+  background-repeat: no-repeat;
+  /* border: 3px red solid; */
+  margin: -4px 10px 0px 0px;
+}
+
+input:required + .error-text::after {
+  position: absolute;
+  content: "Can't be empty";
+  top: 10px;
+  right: 0;
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 400;
+  color: white;
+  font-style: italic;
+  padding: 0px 0px 15px 40px;
+  margin: -7px 0px 0px 0px;
+}
+
+input[placeholder="Message"]:required + .error-text::after {
+  position: absolute;
+  content: "Can't be empty";
+  top: 10px;
+  right: 0;
+  font-size: 12px;
+  line-height: 26px;
+  color: white;
+  font-style: italic;
+  padding: 5px 0px 15px 25px;
+  margin: -15px 0px 0px 0px;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* CHECK THIS OUT
+
+https://www.jonathan-harrell.com/blog/advanced-css-only-form-styling/ 
+
+youtube.com/watch?v=FM2RN8rHCTE&ab_channel=BenAwadBenAwad*/
 
 body {
   margin: 0;

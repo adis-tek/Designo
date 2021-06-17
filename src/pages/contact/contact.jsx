@@ -31,10 +31,22 @@ function contact() {
             <div className="form-outer">
             <div className="form-inner">
             <form className="form">
+                <div className="input-container">
                 <input className="name-input" type="text" name="name" placeholder="Name" required></input>
+                <span class="error-text"></span>
+                </div>
+                <div className="input-container">
                 <input className="email-input" type="text" name="email" placeholder="Email" required></input>
+                <span class="error-text"></span>
+                </div>
+                <div className="input-container">
                 <input className="phone-input" type="tel" name="phone" placeholder="Phone" required></input>
+                <span class="error-text"></span>
+                </div>
+                <div className="input-container">
                 <input className="message-input" type="text" name="text" placeholder="Message" required></input>
+                <span class="error-text"></span>
+                </div>
                 <button className="banner-button">
                     <h3 className="button-text" type="submit">GET IN TOUCH</h3>
                 </button>

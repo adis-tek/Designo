@@ -3,12 +3,16 @@
 .home-container {
   @include styles.flexCenter(center, column);
   width: 100vw;
+  z-index: auto;
+  overflow: hidden;
   .home-body {
     position: relative;
     @include styles.flexCenter(center, column);
     width: 80vw;
     max-width: 1092px;
+    z-index: 0;
     .home-banner {
+      position: relative;
       display: flex;
       flex-direction: row-reverse;
       align-items: center;
@@ -17,19 +21,52 @@
       height: 640px;
       background-color: styles.$peach;
       border-radius: 20px;
+      overflow: hidden;
+      z-index: 1;
+      @media screen and (max-width: styles.$screen-lg-max) {
+        flex-direction: column-reverse;
+        height: 843px;
+      }
       .dark-circle {
         position: absolute;
-        top: 0;
+        bottom: 0;
         right: 0;
-        width: 640px;
+        width: 50vw;
+        max-width: 640px;
         height: auto;
         object-fit: cover;
+        z-index: 0;
+        @media screen and (max-width: styles.$screen-lg-max) {
+          width: calc(72.5vw + 5rem);
+          max-width: none;
+          bottom: 30px;
+          right: -165px;
+        }
       }
       .iphone {
-        width: 500px;
+        position: relative;
+        width: calc(30vw + 6.5rem);
+        max-width: 500px;
         height: auto;
         object-fit: cover;
         margin: 0px 0px -300px 0px;
+        z-index: 2;
+        @media screen and (max-width: styles.$screen-lg-max) {
+          position: relative;
+          width: 600px;
+          max-width: none;
+          margin: -550px 0px 0px 0px;
+          bottom: -340px;
+          z-index: 2;
+        }
+        @media screen and (max-width: 791px) {
+          position: relative;
+          width: 600px;
+          max-width: none;
+          margin: -550px 0px 0px 0px;
+          bottom: -390px;
+          z-index: 2;
+        }
       }
       .text-container {
         position: relative;
@@ -37,18 +74,34 @@
         justify-content: center;
         align-items: flex-start;
         flex-direction: column;
+        max-width: 100%;
+        z-index: 5;
         margin: 0px 0px 0px 40px;
+        @media screen and (max-width: styles.$screen-lg-max) {
+          width: 75%;
+          align-items: center;
+          margin: 70px 0px 0px 0px;
+        }
         .banner-header {
-          width: 540px;
           color: white;
           text-align: left;
+          @media screen and (max-width: styles.$screen-lg-max) {
+            width: 100%;
+            text-align: center;
+            z-index: auto;
+          }
         }
         .banner-description {
-          width: 540px;
           color: white;
           text-align: left;
           font-weight: 400;
           margin: 12.5px 0px 0px 0px;
+          @media screen and (max-width: styles.$screen-lg-max) {
+            width: 80%;
+            text-align: center;
+            z-index: auto;
+            margin: 6px 0px 0px 0px;
+          }
         }
         .banner-button {
           position: relative;
@@ -58,19 +111,39 @@
           height: 56px;
           border-radius: 7.5px;
           margin: 30px 0px 0px 0px;
+          z-index: 10;
+          @media screen and (max-width: styles.$screen-lg-max) {
+            margin: 20px 0px 0px 0px;
+          }
           .button-text {
             font-family: "Jost", sans-serif;
             font-weight: 500;
             font-size: 15px;
+            z-index: auto;
           }
         }
       }
     }
+
+    .white-space {
+      background-color: white;
+      width: 100%;
+      height: 125px;
+      z-index: 9999;
+    }
+
     .page-images-container {
+      position: relative;
       display: flex;
       justify-content: space-between;
       width: 100%;
       height: 640px;
+      margin: 0px 0px 0px 0px;
+      @media screen and (max-width: styles.$screen-lg-max) {
+        flex-direction: column;
+        align-items: center;
+        height: 843px;
+      }
       .web-design {
         position: relative;
         @include styles.flexCenter(center, column);
@@ -79,6 +152,14 @@
         background-repeat: no-repeat;
         object-fit: cover;
         border-radius: 20px;
+        @media screen and (max-width: styles.$screen-lg-max) {
+          flex-grow: none;
+          width: 100%;
+          height: 50px;
+          background-image: url("../../assets/home/mobile/image-web-design.jpg");
+          background-repeat: no-repeat;
+          object-fit: cover;
+        }
         .image-text-container {
           position: relative;
           @include styles.flexCenter(center, column);
@@ -105,6 +186,11 @@
       justify-content: space-between;
       align-items: flex-end;
       flex-grow: 0.5;
+      @media screen and (max-width: styles.$screen-lg-max) {
+        flex-grow: none;
+        width: 100%;
+        height: 35%;
+      }
       .app-design {
         position: relative;
         @include styles.flexCenter(center, column);
@@ -114,6 +200,14 @@
         background-repeat: no-repeat;
         object-fit: cover;
         border-radius: 20px;
+        @media screen and (max-width: styles.$screen-lg-max) {
+          flex-grow: none;
+          width: 100%;
+          height: 50px;
+          // background-image: url("../../assets/home/mobile/image-web-design.jpg");
+          background-repeat: no-repeat;
+          object-fit: cover;
+        }
         .image-text-container {
           position: relative;
           @include styles.flexCenter(center, column);
@@ -142,6 +236,14 @@
         background-repeat: no-repeat;
         object-fit: cover;
         border-radius: 20px;
+        @media screen and (max-width: styles.$screen-lg-max) {
+          flex-grow: none;
+          width: 100%;
+          height: 50px;
+          // background-image: url("../../assets/home/mobile/image-web-design.jpg");
+          background-repeat: no-repeat;
+          object-fit: cover;
+        }
         .image-text-container {
           position: relative;
           @include styles.flexCenter(center, column);
@@ -167,10 +269,21 @@
       @include styles.flexCenter(center, row);
       width: 100%;
       height: auto;
+      margin: 80px 0px 80px 0px;
+      @media screen and (max-width: styles.$screen-lg-max) {
+        @include styles.flexCenter(center, column);
+      }
       .section {
         position: relative;
         @include styles.flexCenter(center, column);
         flex-grow: 0.3;
+        @media screen and (max-width: styles.$screen-lg-max) {
+          @include styles.flexCenter(center, row);
+          margin: 10px 0px 10px 0px;
+        }
+        @media screen and (max-width: styles.$screen-md-max) {
+          @include styles.flexCenter(center, column);
+        }
         .designer-container {
           width: 202px;
           height: 202px;
@@ -202,12 +315,34 @@
             z-index: 9999;
           }
         }
-        .header {
-          position: relative;
-        }
-        .description {
-          text-align: center;
-          font-weight: 400;
+        .section-text-container {
+          display: none;
+          @media screen and (max-width: styles.$screen-lg-max) {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 0px 0px 0px 30px;
+          }
+          @media screen and (max-width: styles.$screen-md-max) {
+            @include styles.flexCenter(center, column);
+          }
+          .header {
+            position: relative;
+          }
+          .description {
+            text-align: center;
+            font-weight: 400;
+            margin: 0px 0px 0px 0px;
+            @media screen and (max-width: styles.$screen-lg-max) {
+              width: 90%;
+              text-align: left;
+            }
+            @media screen and (max-width: styles.$screen-md-max) {
+              text-align: center;
+            }
+          }
         }
       }
     }

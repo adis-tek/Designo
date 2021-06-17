@@ -32,6 +32,8 @@ function home() {
             </div>
             </div>
 
+            <div className="white-space"></div>
+
             <div className="page-images-container">
 
             <div className="web-design">
@@ -66,9 +68,11 @@ function home() {
             <img src={darkCircle} alt="Dark Circle" className="circle1" />
             <img src={passionate} alt="Designer At Work" className="section-image" />
             </div>
+            <div className="section-text-container">
             <h3 className="header">PASSIONATE</h3>
             <p className="description">Each project starts with an in-depth brand research to ensure we only create products that serve a purpose. We merge
             art, design, and technology into exciting new solutions.</p>
+            </div>
             </div>
             
             <div className="section">
@@ -76,9 +80,11 @@ function home() {
             <img src={darkCircle} alt="Dark Circle" className="circle2" />
             <img src={resourceful} alt="Designer At Work" className="section-image" />
             </div>
+            <div className="section-text-container">
             <h3 className="header">RESOURCEFUL</h3>
             <p className="description">Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer
             collaboration. It guarantees superior results that fulfill our clients’ needs.</p>
+            </div>
             </div>
             
             <div className="section">
@@ -86,9 +92,11 @@ function home() {
             <img src={darkCircle} alt="Dark Circle" className="circle3" />
             <img src={friendly} alt="Designer At Work" className="section-image" />
             </div>
+            <div className="section-text-container">
             <h3 className="header">FRIENDLY</h3>
             <p className="description">We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we
             strive to give them the best experience a company can provide.</p>
+            </div>
             </div>
 
             </div>
