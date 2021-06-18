@@ -1,10 +1,16 @@
 import React from 'react';
 import './about.scss';
 import BannerImage from '../../assets/about/desktop/image-about-hero.jpg';
+import BannerImageTablet from '../../assets/about/tablet/image-about-hero.jpg';
+import BannerImageMobile from '../../assets/about/mobile/image-about-hero.jpg';
 import DarkCircle from '../../assets/about/desktop/bg-pattern-hero-about-desktop.svg';
 import Talent from '../../assets/about/desktop/image-world-class-talent.jpg';
+import TalentTablet from '../../assets/about/tablet/image-world-class-talent.jpg';
+import TalentMobile from '../../assets/about/mobile/image-world-class-talent.jpg';
 import TwoCircles from '../../assets/shared/desktop/bg-pattern-two-circles.svg';
 import RealDeal from '../../assets/about/desktop/image-real-deal.jpg';
+import RealDealTablet from '../../assets/about/tablet/image-real-deal.jpg';
+import RealDealMobile from '../../assets/about/mobile/image-real-deal.jpg';
 import Canada from '../../assets/shared/desktop/illustration-canada.svg';
 import Australia from '../../assets/shared/desktop/illustration-australia.svg';
 import UnitedKingdom from '../../assets/shared/desktop/illustration-united-kingdom.svg';
@@ -13,9 +19,11 @@ function about() {
     return (
         <>
         <div className="about-container">
-        <head>
+        <head> 
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* The line below sets up the window properly.
+        If you remove the line below there will be a zoomed-in effect. */}
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0" />
 
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
         
@@ -34,10 +42,15 @@ function about() {
         digital experiences that connect with our clients' audiences.</p>
     </div>
     <img src={BannerImage} alt="Team Working Together" className="banner-image" />
+    <img src={BannerImageTablet} alt="Team Working Together" className="banner-image-tablet" />
+    <img src={BannerImageMobile} alt="Team Working Together" className="banner-image-mobile" />
+
     </div>
 
     <div className="talent-container">
         <img src={Talent} alt="artist" className="talent-image" />
+        <img src={TalentTablet} alt="artist" className="talent-image-tablet" />
+        <img src={TalentMobile} alt="artist" className="talent-image-mobile" />
         <div className="text-and-image-container">
             <img src={TwoCircles} alt="two circles" className="two-circles" />
         <div className="talent-text-container">
@@ -92,6 +105,8 @@ function about() {
 
 <div className="talent-container2">
         <img src={RealDeal} alt="artist" className="talent-image" />
+        <img src={RealDealTablet} alt="artist" className="talent-image-tablet" />
+        <img src={RealDealMobile} alt="artist" className="talent-image-mobile" />
         <div className="text-and-image-container">
             <img src={TwoCircles} alt="two circles" className="two-circles" />
         <div className="talent-text-container">

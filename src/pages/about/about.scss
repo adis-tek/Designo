@@ -8,6 +8,12 @@
     @include styles.flexCenter(center, column);
     width: 80vw;
     max-width: 1092px;
+    @media (max-width: styles.$screen-lg-max) {
+      width: 90vw;
+    }
+    @media (max-width: styles.$screen-sm-max) {
+      width: 100vw;
+    }
     .top-banner {
       position: relative;
       @include styles.flexCenter(space-between, row);
@@ -16,12 +22,29 @@
       background-color: styles.$peach;
       border-radius: 15px;
       overflow: hidden;
+      margin: 0px 0px 120px 0px;
+      @media (max-width: styles.$screen-lg-max) {
+        @include styles.flexCenter(space-between, column-reverse);
+        width: 100%;
+        height: 45vh;
+      }
+      @media (max-width: styles.$screen-sm-max) {
+        margin: 0px;
+        border-radius: 0px;
+      }
       .text-container {
         position: relative;
         @include styles.flexCenter(center, column);
         width: 46%;
         height: auto;
         margin: 0px 40px 0px 60px;
+        @media (max-width: styles.$screen-lg-max) {
+          width: 80%;
+          margin: 0px 0px 60px 0px;
+        }
+        @media (max-width: styles.$screen-md-max) {
+          margin: 0px 0px 80px 0px;
+        }
         .dark-circle {
           position: absolute;
           width: 630px;
@@ -33,6 +56,9 @@
           width: 100%;
           height: auto;
           text-align: left;
+          @media (max-width: styles.$screen-lg-max) {
+            text-align: center;
+          }
         }
         .description {
           color: white;
@@ -40,14 +66,55 @@
           height: auto;
           text-align: left;
           font-weight: 400;
-          margin: 0px 0px 0px 0px;
+          margin: 30px 0px 0px 0px;
+          @media (max-width: styles.$screen-lg-max) {
+            text-align: center;
+            margin: 20px 0px 0px 0px;
+          }
         }
       }
       .banner-image {
+        display: block;
         width: 476;
         height: auto;
         object-fit: cover;
         z-index: 9999;
+        @media (max-width: styles.$screen-lg-max) {
+          display: none;
+        }
+      }
+      .banner-image-tablet {
+        display: none;
+        @media (max-width: styles.$screen-lg-max) {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 9999;
+          margin: 0px 0px 0px 0px;
+        }
+        @media (max-width: styles.$screen-md-max) {
+          display: none;
+        }
+      }
+      .banner-image-mobile {
+        display: none;
+        @media (max-width: styles.$screen-md-max) {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 9999;
+          margin: 0px 0px 0px 0px;
+        }
+        @media (max-width: styles.$screen-sm-max) {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          z-index: 9999;
+          margin: 0px 0px 0px 0px;
+        }
       }
     }
     .talent-container {
@@ -58,10 +125,50 @@
       border-radius: 15px;
       overflow: hidden;
       background-color: #fdf3f0;
+      margin: 0px 0px 120px 0px;
+      @media (max-width: styles.$screen-lg-max) {
+        @include styles.flexCenter(center, column);
+        height: 736px;
+      }
+      @media (max-width: styles.$screen-sm-max) {
+        height: 865px;
+        border-radius: 0px;
+      }
       .talent-image {
         object-fit: cover;
         width: auto;
         height: 100%;
+        @media (max-width: styles.$screen-lg-max) {
+          display: none;
+        }
+      }
+      .talent-image-tablet {
+        display: none;
+        @media (max-width: styles.$screen-lg-max) {
+          display: block;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+        @media (max-width: styles.$screen-md-max) {
+          display: block;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+        @media (max-width: styles.$screen-sm-max) {
+          display: none;
+        }
+      }
+      .talent-image-mobile {
+        display: none;
+        @media (max-width: styles.$screen-sm-max) {
+          display: block;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+        }
       }
       .text-and-image-container {
         position: relative;
@@ -80,14 +187,28 @@
           justify-content: center;
           align-items: flex-start;
           width: 75%;
+          @media (max-width: styles.$screen-lg-max) {
+            width: 80%;
+            margin: 60px 0px 80px 0px;
+          }
+          @media (max-width: styles.$screen-sm-max) {
+            margin: 60px 0px 100px 0px;
+          }
           .talent-heading {
             font-size: 40px;
             color: styles.$peach;
             margin: 0px 0px 0px 0px;
+            @media (max-width: styles.$screen-lg-max) {
+              width: 100%;
+              text-align: center;
+            }
           }
           .talent-description {
             font-weight: 400;
             margin: 30px 0px 0px 0px;
+            @media (max-width: styles.$screen-lg-max) {
+              text-align: center;
+            }
           }
         }
       }
@@ -100,10 +221,49 @@
       border-radius: 15px;
       overflow: hidden;
       background-color: #fdf3f0;
+      margin: 0px 0px 120px 0px;
+      @media (max-width: styles.$screen-lg-max) {
+        @include styles.flexCenter(center, column);
+        height: 736px;
+      }
+      @media (max-width: styles.$screen-sm-max) {
+        height: 865px;
+      }
       .talent-image {
         object-fit: cover;
         width: auto;
         height: 100%;
+        @media (max-width: styles.$screen-lg-max) {
+          display: none;
+        }
+      }
+      .talent-image-tablet {
+        display: none;
+        @media (max-width: styles.$screen-lg-max) {
+          display: block;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+        @media (max-width: styles.$screen-md-max) {
+          display: block;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+        @media (max-width: styles.$screen-sm-max) {
+          display: none;
+        }
+      }
+      .talent-image-mobile {
+        display: none;
+        @media (max-width: styles.$screen-sm-max) {
+          display: block;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+          background-repeat: no-repeat;
+        }
       }
       .text-and-image-container {
         position: relative;
@@ -122,6 +282,13 @@
           justify-content: center;
           align-items: flex-start;
           width: 75%;
+          @media (max-width: styles.$screen-lg-max) {
+            width: 80%;
+            margin: 60px 0px 120px 0px;
+          }
+          @media (max-width: styles.$screen-sm-max) {
+            margin: 60px 0px 100px 0px;
+          }
           .talent-heading {
             font-size: 40px;
             color: styles.$peach;
@@ -139,14 +306,24 @@
       @include styles.flexCenter(center, row);
       width: 100%;
       height: auto;
+      margin: 0px 0px 120px 0px;
+      @media (max-width: styles.$screen-lg-max) {
+        @include styles.flexCenter(center, column);
+      }
       .section {
         position: relative;
         @include styles.flexCenter(center, column);
         flex-grow: 0.3;
+        @media (max-width: styles.$screen-lg-max) {
+          margin: 15px 0px;
+        }
         .designer-container {
           width: 202px;
           height: 202px;
           object-fit: cover;
+          @media (max-width: styles.$screen-lg-max) {
+            margin: 15px 0px;
+          }
           .circle1 {
             position: absolute;
             width: 192px;
@@ -176,6 +353,10 @@
         }
         .header {
           position: relative;
+          margin: 15px 0px;
+          @media (max-width: styles.$screen-lg-max) {
+            margin: 15px 0px;
+          }
         }
         .banner-button {
           position: relative;
@@ -188,8 +369,9 @@
           border-radius: 7.5px;
           margin: 0px 0px 0px 0px;
           z-index: 9999;
+          margin: 15px 0px;
           @media (max-width: styles.$screen-lg-max) {
-            margin: 0px 0px 0px 0px;
+            margin: 15px 0px;
           }
           .button-text {
             font-family: "Jost", sans-serif;

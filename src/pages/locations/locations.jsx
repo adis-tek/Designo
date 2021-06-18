@@ -1,9 +1,13 @@
 import React from 'react';
 import './locations.scss';
 import TwoCircles from '../../assets/shared/desktop/bg-pattern-two-circles.svg';
+import ThreeCircles from '../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg';
 import CanadaMap from '../../assets/locations/desktop/image-map-canada.png';
+import CanadaMapTablet from '../../assets/locations/tablet/image-map-canada.png';
 import AustraliaMap from '../../assets/locations/desktop/image-map-australia.png';
+import AustraliaMapTablet from '../../assets/locations/tablet/image-map-australia.png';
 import UnitedKingdomMap from '../../assets/locations/desktop/image-map-united-kingdom.png';
+import UnitedKingdomMapTablet from '../../assets/locations/tablet/image-map-uk.png';
 
 function locations() {
     return (
@@ -23,6 +27,7 @@ function locations() {
             <div className="location-card">
                 <div className="location-text-container">
                 <img src={TwoCircles} alt="Two Circles" className="two-circles" />
+                <img src={ThreeCircles} alt="Three Circles" className="three-circles" />
                     <h1 className="header">Canada</h1>
                     <div className="sub-info-container">
                     <div className="sub-info">
@@ -38,11 +43,13 @@ function locations() {
                     </div>
                 </div>
                 <img src={CanadaMap} alt="Map Location" className="map-image" />
+                <img src={CanadaMapTablet} alt="Map Location" className="map-image-tablet" />
             </div>
 
             <div className="location-card2">
                 <div className="location-text-container">
                 <img src={TwoCircles} alt="Two Circles" className="two-circles" />
+                <img src={ThreeCircles} alt="Three Circles" className="three-circles" />
                     <h1 className="header">Australia</h1>
                     <div className="sub-info-container">
                     <div className="sub-info">
@@ -58,11 +65,13 @@ function locations() {
                     </div>
                 </div>
                 <img src={AustraliaMap} alt="Map Location" className="map-image" />
+                <img src={AustraliaMapTablet} alt="Map Location" className="map-image-tablet" />
             </div>
 
             <div className="location-card">
                 <div className="location-text-container">
                 <img src={TwoCircles} alt="Two Circles" className="two-circles" />
+                <img src={ThreeCircles} alt="Three Circles" className="three-circles" />
                     <h1 className="header">United Kingdom</h1>
                     <div className="sub-info-container">
                     <div className="sub-info">
@@ -78,6 +87,7 @@ function locations() {
                     </div>
                 </div>
                 <img src={UnitedKingdomMap} alt="Map Location" className="map-image" />
+                <img src={UnitedKingdomMapTablet} alt="Map Location" className="map-image-tablet" />
             </div>
         </div>
         </body>

@@ -8,6 +8,12 @@
     @include styles.flexCenter(center, column);
     width: 80vw;
     max-width: 1092px;
+    @media (max-width: styles.$screen-lg-max) {
+      width: 90vw;
+    }
+    @media (max-width: styles.$screen-sm-max) {
+      width: 100vw;
+    }
     .location-cards-container {
       position: relative;
       @include styles.flexCenter(center, column);
@@ -19,6 +25,12 @@
         width: 100%;
         height: auto;
         border-radius: 15px;
+        @media (max-width: styles.$screen-lg-max) {
+          @include styles.flexCenter(space-between, column-reverse);
+        }
+        @media (max-width: styles.$screen-sm-max) {
+          border-radius: 0px;
+        }
         .location-text-container {
           position: relative;
           @include styles.flexCenter(center, column);
@@ -27,6 +39,12 @@
           background-color: #fdf3f0;
           border-radius: 15px;
           overflow: hidden;
+          @media (max-width: styles.$screen-md-max) {
+            height: 400px;
+          }
+          @media (max-width: styles.$screen-sm-max) {
+            border-radius: 0px;
+          }
           .two-circles {
             position: absolute;
             left: 0;
@@ -39,36 +57,79 @@
             line-height: 48px;
             color: styles.$peach;
             margin: 0px 0px 10px 0px;
+            @media (max-width: styles.$screen-md-max) {
+              text-align: center;
+              margin: 40px 0px 20px 0px;
+            }
+            @media (max-width: styles.$screen-sm-max) {
+              font-size: 32px;
+            }
           }
           .sub-info-container {
             position: relative;
             @include styles.flexCenter(flex-start, row);
             width: 80%;
             height: auto;
+            @media (max-width: styles.$screen-md-max) {
+              @include styles.flexCenter(center, column);
+              margin: 0px 0px 40px 0px;
+            }
             .sub-info {
               width: 100%;
               height: 100%;
+              @media (max-width: styles.$screen-md-max) {
+                margin: 0px 0px 20px 0px;
+              }
               .sub-header {
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 26px;
                 margin: 10px 0px 0px 0px;
+                @media (max-width: styles.$screen-md-max) {
+                  text-align: center;
+                }
               }
               .description {
                 font-weight: 400;
                 font-size: 16px;
                 line-height: 26px;
                 margin: 10px 0px 0px 0px;
+                @media (max-width: styles.$screen-md-max) {
+                  text-align: center;
+                }
               }
             }
           }
         }
         .map-image {
+          display: block;
           width: auto;
           height: 326px;
           object-fit: cover;
-          margin: 0px 0px 0px 35px;
+          margin: 0px 35px 0px 0px;
           border-radius: 15px;
+          @media (max-width: styles.$screen-lg-max) {
+            display: none;
+          }
+          @media (max-width: styles.$screen-sm-max) {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border-radius: 0px;
+            margin: 0px;
+          }
+        }
+        .map-image-tablet {
+          display: none;
+          @media (max-width: styles.$screen-lg-max) {
+            display: block;
+            width: 100%;
+            margin: 0px 0px 20px 0px;
+            border-radius: 15px;
+          }
+          @media (max-width: styles.$screen-sm-max) {
+            display: none;
+          }
         }
       }
     }
@@ -79,6 +140,12 @@
       height: auto;
       border-radius: 15px;
       margin: 50px 0px 50px 0px;
+      @media (max-width: styles.$screen-lg-max) {
+        @include styles.flexCenter(center, column-reverse);
+      }
+      @media (max-width: styles.$screen-sm-max) {
+        border-radius: 0px;
+      }
       .location-text-container {
         position: relative;
         @include styles.flexCenter(center, column);
@@ -87,10 +154,31 @@
         background-color: #fdf3f0;
         border-radius: 15px;
         overflow: hidden;
+        @media (max-width: styles.$screen-md-max) {
+          height: 400px;
+        }
+        @media (max-width: styles.$screen-sm-max) {
+          border-radius: 0px;
+        }
         .two-circles {
+          display: block;
           position: absolute;
           left: 0;
           bottom: 0;
+          @media (max-width: styles.$screen-sm-max) {
+            display: none;
+          }
+        }
+        .three-circles {
+          display: none;
+          @media (max-width: styles.$screen-sm-max) {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.3;
+            transform: rotate(0.5turn);
+          }
         }
         .header {
           width: 80%;
@@ -99,36 +187,79 @@
           line-height: 48px;
           color: styles.$peach;
           margin: 0px 0px 10px 0px;
+          @media (max-width: styles.$screen-md-max) {
+            text-align: center;
+            margin: 40px 0px 20px 0px;
+          }
+          @media (max-width: styles.$screen-sm-max) {
+            font-size: 32px;
+          }
         }
         .sub-info-container {
           position: relative;
           @include styles.flexCenter(flex-start, row);
           width: 80%;
           height: auto;
+          @media (max-width: styles.$screen-md-max) {
+            @include styles.flexCenter(center, column);
+            margin: 0px 0px 40px 0px;
+          }
           .sub-info {
             width: 100%;
             height: 100%;
+            @media (max-width: styles.$screen-md-max) {
+              margin: 0px 0px 20px 0px;
+            }
             .sub-header {
               font-weight: 700;
               font-size: 16px;
               line-height: 26px;
               margin: 10px 0px 0px 0px;
+              @media (max-width: styles.$screen-md-max) {
+                text-align: center;
+              }
             }
             .description {
               font-weight: 400;
               font-size: 16px;
               line-height: 26px;
               margin: 10px 0px 0px 0px;
+              @media (max-width: styles.$screen-md-max) {
+                text-align: center;
+              }
             }
           }
         }
       }
       .map-image {
+        display: block;
         width: auto;
         height: 326px;
         object-fit: cover;
         margin: 0px 35px 0px 0px;
         border-radius: 15px;
+        @media (max-width: styles.$screen-lg-max) {
+          display: none;
+        }
+        @media (max-width: styles.$screen-sm-max) {
+          display: block;
+          width: 100%;
+          height: 100%;
+          border-radius: 0px;
+          margin: 0px;
+        }
+      }
+      .map-image-tablet {
+        display: none;
+        @media (max-width: styles.$screen-lg-max) {
+          display: block;
+          width: 100%;
+          margin: 0px 0px 20px 0px;
+          border-radius: 15px;
+        }
+        @media (max-width: styles.$screen-sm-max) {
+          display: none;
+        }
       }
     }
   }
