@@ -1,6 +1,7 @@
 import React from 'react';
 import './graphic-design.scss';
 import CTACircles from '../../assets/web-design/desktop/bg-pattern-intro-web.svg';
+import TwoCircles from '../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg';
 import TimBrown from '../../assets/graphic-design/desktop/image-change.jpg';
 import BoxedWater from '../../assets/graphic-design/desktop/image-boxed-water.jpg';
 import Science from '../../assets/graphic-design/desktop/image-science.jpg';
@@ -25,6 +26,7 @@ function graphicDesign() {
         <p className="banner-description">We deliver eye-catching branding materials that are tailored to meet your business objectives.</p>
         <div className="circles-container">
             <img src={CTACircles} alt="circles" className="cta-banner-circles" />
+            <img src={TwoCircles} alt="circles" className="two-circles-mobile" />
         </div>
         </div>
 
@@ -33,20 +35,26 @@ function graphicDesign() {
         <div className="row-container">
         <div class="card">
         <img src={TimBrown} alt="project" className="card-image" />
+        <div className="text-container">
         <h3 className="card-title">Airfilter</h3>
         <p className="card-description">Solving the problem of poor indoor air quality by filtering the air</p>
+        </div>
         </div>
 
         <div class="card">
         <img src={BoxedWater} alt="project" className="card-image" />
+        <div className="text-container">
         <h3 className="card-title">Eyecam</h3>
         <p className="card-description">Product that lets you edit your favorite photos and videos at any time</p>
+        </div>
         </div>
 
         <div class="card">
         <img src={Science} alt="project" className="card-image" />
+        <div className="text-container">
         <h3 className="card-title">Faceit</h3>
         <p className="card-description">Get to meet your favorite internet superstar with the faceit app</p>
+        </div>
         </div>
 
         </div>

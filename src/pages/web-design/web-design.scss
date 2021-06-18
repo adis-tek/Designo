@@ -31,6 +31,9 @@
         margin: 30px 0px 0px 0px;
         text-align: center;
         z-index: 9999;
+        @media screen and (max-width: styles.$screen-lg-max) {
+          width: 50%;
+        }
       }
     }
     .cta-banner-circles {
@@ -58,6 +61,9 @@
         width: 100%;
         @include styles.flexCenter(space-around, row);
         margin: 0px 0px 30px 0px;
+        @media (max-width: styles.$screen-lg-max) {
+          display: none;
+        }
         .card {
           position: relative;
           display: flex;
@@ -67,6 +73,9 @@
           border-radius: 15px;
           background-color: #fdf3f0;
           overflow: hidden;
+          @media (max-width: styles.$screen-lg-max) {
+            flex-direction: row;
+          }
           .card-title {
             text-align: center;
             color: styles.$peach;
