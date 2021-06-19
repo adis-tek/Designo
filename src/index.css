@@ -1,6 +1,6 @@
 * {
   font-family: "Jost", sans-serif;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   /* border: none; */
   margin: 0px;
   padding: 0px;
@@ -38,6 +38,24 @@ p {
   font-size: 16px;
   line-height: 26px;
   font-weight: 500;
+}
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+a {
+  width: auto;
+  height: auto;
+  text-decoration: none;
+  color: inherit;
+  margin: 0px;
+  padding: 0px;
 }
 
 input {
