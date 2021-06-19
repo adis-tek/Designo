@@ -48,7 +48,7 @@ function contact() {
                 <span class="error-text"></span>
                 </div>
                 <button className="banner-button">
-                    <h3 className="button-text" type="submit">GET IN TOUCH</h3>
+                    <h3 className="button-text" type="submit">SUBMIT</h3>
                 </button>
             </form>
             </div>

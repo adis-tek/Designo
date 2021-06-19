@@ -1,6 +1,6 @@
 * {
   font-family: "Jost", sans-serif;
-  /* border: 1px solid red; */
+  border: 1px solid red;
   /* border: none; */
   margin: 0px;
   padding: 0px;
@@ -85,13 +85,13 @@ input:placeholder-shown {
   font-size: 14px;
   font-weight: 400;
   color: white;
-  padding: 5px 0px 10px 25px;
+  padding: 5px 0px 10px 0px;
 }
 
 input[placeholder="Message"]:placeholder-shown {
   font-size: 14px;
   font-weight: 400;
-  padding: 0px 0px 75px 25px;
+  padding: 0px 0px 75px 0px;
 }
 
 input:required:invalid {
