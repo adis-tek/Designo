@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './contact.scss';
 import DarkCircle from '../../assets/about/desktop/bg-pattern-hero-about-desktop.svg';
 import Canada from '../../assets/shared/desktop/illustration-canada.svg';
@@ -6,7 +6,25 @@ import Australia from '../../assets/shared/desktop/illustration-australia.svg';
 import UnitedKingdom from '../../assets/shared/desktop/illustration-united-kingdom.svg';
 import Error from '../../assets/contact/desktop/icon-error.svg';
 
-function contact() {
+function Contact() {
+    const [errorTextClass, setErrorTextClass] = useState("error-text-initialized");
+
+    const toggleNameError = () => {
+        setErrorTextClass("error-text");
+    }
+
+    const toggleEmailError = () => {
+        setErrorTextClass("error-text");
+    }
+
+    const togglePhoneError = () => {
+        setErrorTextClass("error-text");
+    }
+
+    const toggleMessageError = () => {
+        setErrorTextClass("error-text");
+    }
+
     return (
 <>
 <div className="contact-container">
@@ -32,19 +50,19 @@ function contact() {
             <div className="form-inner">
             <form className="form">
                 <div className="input-container">
-                <input className="name-input" type="text" name="name" placeholder="Name" required></input>
+                <input className="name-input" type="text" name="name" placeholder="Name" required onClick={toggleNameError}></input>
+                <span class={errorTextClass}></span>
+                </div>
+                <div className="input-container">
+                <input className="email-input" type="text" name="email" placeholder="Email" required onClick={toggleEmailError}></input>
                 <span class="error-text"></span>
                 </div>
                 <div className="input-container">
-                <input className="email-input" type="text" name="email" placeholder="Email" required></input>
+                <input className="phone-input" type="tel" name="phone" placeholder="Phone" required onClick={togglePhoneError}></input>
                 <span class="error-text"></span>
                 </div>
                 <div className="input-container">
-                <input className="phone-input" type="tel" name="phone" placeholder="Phone" required></input>
-                <span class="error-text"></span>
-                </div>
-                <div className="input-container">
-                <input className="message-input" type="text" name="text" placeholder="Message" required></input>
+                <input className="message-input" type="text" name="text" placeholder="Message" required onClick={toggleMessageError}></input>
                 <span class="error-text"></span>
                 </div>
                 <button className="banner-button">
@@ -97,4 +115,4 @@ function contact() {
     )
 }
 
-export default contact
+export default Contact;

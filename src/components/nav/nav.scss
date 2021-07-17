@@ -27,6 +27,9 @@
         width: auto;
         height: 27px;
         object-fit: cover;
+        @media (max-width: styles.$screen-sm-max) {
+          margin: 0px 0px 0px 20px;
+        }
       }
     }
     .nav-links-container {

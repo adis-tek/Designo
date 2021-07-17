@@ -100,6 +100,9 @@
             justify-content: center;
             width: 100%;
             height: 100%;
+            .error-text::after {
+              right: 35px;
+            }
             .banner-button {
               position: relative;
               @include styles.flexCenter(center, row);
