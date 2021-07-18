@@ -7,22 +7,34 @@ import UnitedKingdom from '../../assets/shared/desktop/illustration-united-kingd
 import Error from '../../assets/contact/desktop/icon-error.svg';
 
 function Contact() {
-    const [errorTextClass, setErrorTextClass] = useState("error-text-initialized");
+    const [errorTextName, setErrorTextName] = useState("error-text-initialized");
+    const [errorTextEmail, setErrorTextEmail] = useState("error-text-initialized");
+    const [errorTextPhone, setErrorTextPhone] = useState("error-text-initialized");
+    const [errorTextMessage, setErrorTextMessage] = useState("error-text-initialized");
+    {/* */}
+    const [inputName, setInputName] = useState("input-initialized");
+    const [inputEmail, setInputEmail] = useState("input-initialized");
+    const [inputPhone, setInputPhone] = useState("input-initialized");
+    const [inputMessage, setInputMessage] = useState("input-initialized");
 
     const toggleNameError = () => {
-        setErrorTextClass("error-text");
+        setErrorTextName("error-text");
+        setInputName("input-error");
     }
 
     const toggleEmailError = () => {
-        setErrorTextClass("error-text");
+        setErrorTextEmail("error-text");
+        setInputEmail("input-error");
     }
 
     const togglePhoneError = () => {
-        setErrorTextClass("error-text");
+        setErrorTextPhone("error-text");
+        setInputPhone("input-error");
     }
 
     const toggleMessageError = () => {
-        setErrorTextClass("error-text");
+        setErrorTextMessage("error-text");
+        setInputMessage("input-error");
     }
 
     return (
@@ -50,20 +62,20 @@ function Contact() {
             <div className="form-inner">
             <form className="form">
                 <div className="input-container">
-                <input className="name-input" type="text" name="name" placeholder="Name" required onClick={toggleNameError}></input>
-                <span class={errorTextClass}></span>
+                <input className={inputName} type="text" name="name" placeholder="Name" required onClick={toggleNameError}></input>
+                <span class={errorTextName}></span>
                 </div>
                 <div className="input-container">
-                <input className="email-input" type="text" name="email" placeholder="Email" required onClick={toggleEmailError}></input>
-                <span class="error-text"></span>
+                <input className={inputEmail} type="text" name="email" placeholder="Email" required onClick={toggleEmailError}></input>
+                <span class={errorTextEmail}></span>
                 </div>
                 <div className="input-container">
-                <input className="phone-input" type="tel" name="phone" placeholder="Phone" required onClick={togglePhoneError}></input>
-                <span class="error-text"></span>
+                <input className={inputPhone} type="tel" name="phone" placeholder="Phone" required onClick={togglePhoneError}></input>
+                <span class={errorTextPhone}></span>
                 </div>
                 <div className="input-container">
-                <input className="message-input" type="text" name="text" placeholder="Message" required onClick={toggleMessageError}></input>
-                <span class="error-text"></span>
+                <input className={inputMessage} type="text" name="text" placeholder="Message" required onClick={toggleMessageError}></input>
+                <span class={errorTextMessage}></span>
                 </div>
                 <button className="banner-button">
                     <h3 className="button-text" type="submit">SUBMIT</h3>
