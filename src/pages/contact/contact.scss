@@ -104,7 +104,12 @@
               display: none;
             }
             .error-text::after {
-              right: 35px;
+              top: 10px;
+              right: 37.5px;
+            }
+            .error-text-message::after {
+              top: 6px;
+              right: 37.5px;
             }
             .banner-button {
               position: relative;

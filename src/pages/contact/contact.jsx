@@ -16,6 +16,28 @@ function Contact() {
     const [inputEmail, setInputEmail] = useState("input-initialized");
     const [inputPhone, setInputPhone] = useState("input-initialized");
     const [inputMessage, setInputMessage] = useState("input-initialized");
+    {/* */}
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
+    const [text, setText] = useState("");
+    {/* */}
+    // const [nameValue, setNameValue] = useState(name.value.trim());
+    // const [emailValue, setEmailValue] = useState(email.value.trim());
+    // const [phoneValue, setPhoneValue] = useState(phone.value.trim());
+    // const [textValue, setTextValue] = useState(text.value.trim());
+    const [formJson, setFormJson] = useState({
+        Name: {name},
+        Email: {email},
+        Phone: {phone},
+        Message: {text},
+    })
+
+    setTimeout(() => {
+        const formData = JSON.parse(localStorage.getItem("form"));
+
+        console.log(formData);
+    }, 300);
 
     const toggleNameError = () => {
         setErrorTextName("error-text");
@@ -33,8 +55,72 @@ function Contact() {
     }
 
     const toggleMessageError = () => {
-        setErrorTextMessage("error-text");
+        setErrorTextMessage("error-text-message");
         setInputMessage("input-error");
+    }
+
+    const isEmail = (email) => {
+        return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+    }
+
+    // const handleForminput = (e) => {
+    //     switch (e.target.id) {
+    //         case ("name") :
+    //             setName(e.target.value);
+    //             break;
+    //         case ("email") :
+    //             setEmail(e.target.value);
+    //             break;
+    //         case ("phone") :
+    //             setPhone(e.target.value);
+    //             break;
+    //         case ("text") :
+    //             setText(e.target.value);
+    //             break;
+    //     }
+    // }
+
+    const checkInputs = (e) => { 
+        e.preventDefault();
+
+        let formChecks = 0;
+
+
+        if (name === "") {
+            console.log("Name Error");
+        } else {
+            formChecks++;
+        }
+        if (email === "") {
+            console.log("Email Error");
+        } else {
+            formChecks++;
+        }
+        if (phone === "") {
+            console.log("Phone Error");
+        } else {
+            formChecks++;
+        }
+        if (text === "") {
+            console.log("Text Error");
+        } else {
+            formChecks++;
+        }
+
+        if (formChecks === 4) {
+            console.log("Form Check Verified")
+            return true;
+        }
+
+        // if ()
+    // window.onbeforeunload = function() {
+    //     localStorage.setItem("form", JSON.stringify({formJson}));
+    // }
+    }
+
+    const onSubmit = (e) => {
+        e.preventDefault();
+        const isValid = checkInputs();
     }
 
     return (
@@ -60,25 +146,25 @@ function Contact() {
             </div>
             <div className="form-outer">
             <div className="form-inner">
-            <form className="form">
+            <form className="form" onSubmit={onSubmit}>
                 <div className="input-container">
-                <input className={inputName} type="text" name="name" placeholder="Name" required onClick={toggleNameError}></input>
+                <input className={inputName} type="text" id="name" name="name" placeholder="Name" required onChange={(e) => {setName(e.target.value)}} onClick={toggleNameError}></input>
                 <span class={errorTextName}></span>
                 </div>
                 <div className="input-container">
-                <input className={inputEmail} type="text" name="email" placeholder="Email" required onClick={toggleEmailError}></input>
+                <input className={inputEmail} type="text" id="email" name="email" placeholder="Email" required onChange={(e) => {setEmail(e.target.value)}} onClick={toggleEmailError}></input>
                 <span class={errorTextEmail}></span>
                 </div>
                 <div className="input-container">
-                <input className={inputPhone} type="tel" name="phone" placeholder="Phone" required onClick={togglePhoneError}></input>
+                <input className={inputPhone} type="tel" id="phone" name="phone" placeholder="Phone" required onChange={(e) => {setPhone(e.target.value)}} onClick={togglePhoneError}></input>
                 <span class={errorTextPhone}></span>
                 </div>
                 <div className="input-container">
-                <input className={inputMessage} type="text" name="text" placeholder="Message" required onClick={toggleMessageError}></input>
+                <textarea className={inputMessage} type="text" id="text" name="text" placeholder="Message" required onChange={(e) => {setText(e.target.value)}} onClick={toggleMessageError}></textarea>
                 <span class={errorTextMessage}></span>
                 </div>
                 <button className="banner-button">
-                    <h3 className="button-text" type="submit">SUBMIT</h3>
+                    <h3 className="button-text" onClick={checkInputs}>SUBMIT</h3>
                 </button>
             </form>
             </div>
