@@ -28,12 +28,6 @@ function Contact() {
     // const [textValue, setTextValue] = useState(text.value.trim());
     const [formSuccess, setFormSuccess] = useState("");
 
-    setTimeout(() => {
-        const formData = JSON.parse(localStorage.getItem("form"));
-
-        console.log(formData);
-    }, 300);
-
     const toggleNameError = () => {
         setErrorTextName("error-text");
         setInputName("input-error");
@@ -58,22 +52,6 @@ function Contact() {
         return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
     }
 
-    // const handleForminput = (e) => {
-    //     switch (e.target.id) {
-    //         case ("name") :
-    //             setName(e.target.value);
-    //             break;
-    //         case ("email") :
-    //             setEmail(e.target.value);
-    //             break;
-    //         case ("phone") :
-    //             setPhone(e.target.value);
-    //             break;
-    //         case ("text") :
-    //             setText(e.target.value);
-    //             break;
-    //     }
-    // }
 
     const checkInputs = (e) => { 
         let formChecks = 0;
@@ -81,8 +59,10 @@ function Contact() {
 
         if (name === "") {
             console.log("Name Error");
-        } else if (name.trim() < 3){
+        } else if (name.trim().length < 3){
             console.log("name is too short")
+            setErrorTextName("name-format-error");
+            setInputName("name-format-error-sign");
         } else {
             formChecks++;
         }
@@ -90,6 +70,8 @@ function Contact() {
             console.log("Email Error");
         } else if (isEmail(email) === false) {
             console.log("invalid email format")
+            setErrorTextEmail("email-format-error");
+            setInputEmail("input-error");
         } else {
             formChecks++;
         }
@@ -97,6 +79,8 @@ function Contact() {
             console.log("Phone Error");
         } else if (phone.trim().length < 10){
             console.log("phone number is invalid")
+            setErrorTextPhone("phone-format-error");
+            setInputPhone("input-error");
         } else {
             formChecks++;
         }
