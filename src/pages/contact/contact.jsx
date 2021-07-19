@@ -26,12 +26,7 @@ function Contact() {
     // const [emailValue, setEmailValue] = useState(email.value.trim());
     // const [phoneValue, setPhoneValue] = useState(phone.value.trim());
     // const [textValue, setTextValue] = useState(text.value.trim());
-    const [formJson, setFormJson] = useState({
-        Name: {name},
-        Email: {email},
-        Phone: {phone},
-        Message: {text},
-    })
+    const [formSuccess, setFormSuccess] = useState("");
 
     setTimeout(() => {
         const formData = JSON.parse(localStorage.getItem("form"));
@@ -81,23 +76,27 @@ function Contact() {
     // }
 
     const checkInputs = (e) => { 
-        e.preventDefault();
-
         let formChecks = 0;
 
 
         if (name === "") {
             console.log("Name Error");
+        } else if (name.trim() < 3){
+            console.log("name is too short")
         } else {
             formChecks++;
         }
         if (email === "") {
             console.log("Email Error");
+        } else if (isEmail(email) === false) {
+            console.log("invalid email format")
         } else {
             formChecks++;
         }
         if (phone === "") {
             console.log("Phone Error");
+        } else if (phone.trim().length < 10){
+            console.log("phone number is invalid")
         } else {
             formChecks++;
         }
@@ -108,7 +107,14 @@ function Contact() {
         }
 
         if (formChecks === 4) {
-            console.log("Form Check Verified")
+            console.log("FORM SUBMITTED SUCCESSFULLY",
+            {
+                Name: {name},
+                Email: {email},
+                Phone: {phone},
+                Text: {text},
+            })
+            setFormSuccess("Your message was sent successfully! We'll get back to you soon.")
             return true;
         }
 
@@ -164,8 +170,11 @@ function Contact() {
                 <span class={errorTextMessage}></span>
                 </div>
                 <button className="banner-button">
-                    <h3 className="button-text" onClick={checkInputs}>SUBMIT</h3>
+                    <h3 className="button-text">SUBMIT</h3>
                 </button>
+                {formSuccess == true && (
+                    <div>{formSuccess}</div>
+                )}
             </form>
             </div>
         </div>
