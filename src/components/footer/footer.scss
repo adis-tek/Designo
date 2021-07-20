@@ -1,0 +1,293 @@
+@use '../../styles';
+
+.footer-container {
+  position: relative;
+  @include styles.flexCenter(center, column);
+  width: 100vw;
+  height: 700px;
+  z-index: auto;
+  overflow: visible;
+  background-color: styles.$black;
+  margin: 300px 0px 0px 0px;
+  @media screen and (max-width: styles.$screen-md-max) {
+    height: 1000px;
+  }
+  .bottom-banner {
+    position: relative;
+    @include styles.flexCenter(space-around, row);
+    width: 80%;
+    max-width: 1092px;
+    height: 500px;
+    background-color: styles.$peach;
+    border-radius: 15px;
+    overflow: hidden;
+    bottom: 200px;
+    z-index: 9999;
+    @media (max-width: styles.$screen-lg-max) {
+      @include styles.flexCenter(space-around, column);
+      height: 600px;
+      padding: 0px 0px 30px 0px;
+    }
+    @media (max-width: styles.$screen-md-max) {
+      height: 900px;
+    }
+    @media (max-width: styles.$screen-sm-max) {
+      height: 1300px;
+    }
+    .banner-text-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 0px 0px 0px 40px;
+      @media (max-width: styles.$screen-lg-max) {
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        margin: 30px 0px 0px 0px;
+      }
+      .banner-heading {
+        color: white;
+        width: 50%;
+        margin: 0px;
+        @media (max-width: styles.$screen-lg-max) {
+          text-align: center;
+        }
+        @media (max-width: styles.$screen-md-max) {
+          width: 75%;
+        }
+        @media (max-width: styles.$screen-sm-max) {
+          font-size: 32px;
+        }
+      }
+      .banner-description {
+        color: white;
+        font-weight: 400;
+        width: 75%;
+        margin: 30px 0px 0px 0px;
+        @media (max-width: styles.$screen-lg-max) {
+          text-align: center;
+        }
+        @media (max-width: styles.$screen-md-max) {
+        }
+        @media (max-width: styles.$screen-sm-max) {
+          font-size: 15px;
+        }
+      }
+    }
+    .banner-button {
+      position: relative;
+      @include styles.flexCenter(center, row);
+      background-color: white;
+      width: 152px;
+      height: 56px;
+      border-radius: 7.5px;
+      margin: 0px 40px 0px 0px;
+      z-index: 9999;
+      @media (max-width: styles.$screen-lg-max) {
+        width: 152px;
+        height: 56px;
+        margin: 30px 0px 0px 0px;
+      }
+      .button-text {
+        font-family: "Jost", sans-serif;
+        font-weight: 500;
+        font-size: 15px;
+        letter-spacing: normal;
+        margin: 20px 0px;
+      }
+    }
+    .cta-banner-circles {
+      position: absolute;
+      top: -45%;
+      right: 0;
+      width: 900px;
+      height: auto;
+      @media (max-width: styles.$screen-lg-max) {
+        right: none;
+        left: 0;
+      }
+    }
+  }
+  .footer-body {
+    position: relative;
+    @include styles.flexCenter(center, column);
+    width: 80vw;
+    max-width: 1092px;
+    height: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: visible;
+    bottom: 120px;
+    @media screen and (max-width: styles.$screen-md-max) {
+      width: 90vw;
+    }
+    @media screen and (max-width: styles.$screen-sm-max) {
+      width: 100vw;
+    }
+    .footer {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      .top-footer {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin: 0px 0px 30px 0px;
+        @media screen and (max-width: styles.$screen-md-max) {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .footer-logo {
+          position: relative;
+          width: 202px;
+          height: 27px;
+          object-fit: cover;
+          @media screen and (max-width: styles.$screen-lg-max) {
+            width: 202px;
+          }
+        }
+        .footer-hr-md {
+          display: none;
+          @media screen and (max-width: styles.$screen-md-max) {
+            position: relative;
+            display: flex;
+            width: 90%;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin: 25px 0px;
+          }
+        }
+        .links-container {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          width: 600px;
+          @media screen and (max-width: styles.$screen-md-max) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+          .link {
+            position: relative;
+            margin: 0px 0px 0px 40px;
+            width: 150px;
+            color: styles.$white;
+            opacity: 50%;
+            letter-spacing: 2px;
+            text-align: right;
+            @media screen and (max-width: styles.$screen-lg-max) {
+              margin: 0px 0px;
+            }
+            @media screen and (max-width: styles.$screen-md-max) {
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              margin: 7.5px 0px;
+            }
+          }
+        }
+      }
+      .footer-hr {
+        position: relative;
+        display: flex;
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        margin: 20px 0px;
+        @media screen and (max-width: styles.$screen-md-max) {
+          display: none;
+        }
+      }
+      .bottom-footer {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        padding: 0px 0px 20px 0px;
+        @media screen and (max-width: styles.$screen-md-max) {
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+        .sub-container {
+          position: relative;
+          display: flex;
+          flex-direction: row;
+          align-items: flex-start;
+          justify-content: space-between;
+          width: 60%;
+          height: 100%;
+          @media screen and (max-width: styles.$screen-md-max) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          }
+          .sub-text {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 40%;
+            height: 100px;
+            @media screen and (max-width: styles.$screen-md-max) {
+              width: 100%;
+              align-items: center;
+              margin: 20px 0px;
+            }
+            .header {
+              position: relative;
+              display: flex;
+              color: styles.$white;
+              opacity: 50%;
+              font-size: 14px;
+              letter-spacing: 1.5px;
+              margin: 0px 0px 7.5px 0px;
+            }
+            .paragraph {
+              position: relative;
+              display: flex;
+              color: styles.$white;
+              opacity: 50%;
+              font-size: 14px;
+              font-weight: normal;
+              letter-spacing: 1.5px;
+              margin: 0px 0px 7.5px 0px;
+            }
+          }
+        }
+      }
+      .social-media-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        width: 300px;
+        height: 100%;
+        right: -12.5px;
+        @media screen and (max-width: styles.$screen-md-max) {
+          width: 100%;
+          align-items: center;
+          margin: 30px 0px;
+          align-items: center;
+          right: 0;
+          justify-content: center;
+        }
+        .icon {
+          position: relative;
+          margin: 0px 12.5px;
+        }
+      }
+    }
+  }
+}

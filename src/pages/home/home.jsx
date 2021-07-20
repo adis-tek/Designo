@@ -6,7 +6,6 @@ import WebDesign from '../../assets/home/desktop/image-web-design-large.jpg';
 import passionate from '../../assets/home/desktop/illustration-passionate.svg';
 import resourceful from '../../assets/home/desktop/illustration-resourceful.svg';
 import friendly from '../../assets/home/desktop/illustration-friendly.svg';
-import CTACircles from '../../assets/shared/desktop/bg-pattern-call-to-action.svg';
 import rightArrow from '../../assets/shared/desktop/icon-right-arrow.svg';
 
 function home() {
@@ -101,31 +100,6 @@ function home() {
             </div>
 
             </div>
-
-            <div className="bottom-banner">
-            <div className="banner-text-container">
-            <h1 className="banner-heading">Let’s talk about your project</h1>
-            <p className="banner-description">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
-            </div>
-            <button className="banner-button">
-            <h3 className="button-text">GET IN TOUCH</h3>
-            </button>
-            <div className="circles-container">
-            <img src={CTACircles} alt="circles" className="cta-banner-circles" />
-            </div>
-            </div>
-            
-            Our company
-            Locations
-            Contact
-            
-            Designo Central Office
-            3886 Wellington Street
-            Toronto, Ontario M9C 3J5
-            
-            Contact Us (Central Office)
-            P : +1 253-863-8967
-            M : contact@designo.co
             </body>
     </div>
 </>

@@ -9,6 +9,7 @@ import GraphicDesign from './pages/graphic-design/graphicDesign.jsx';
 import About from './pages/about/about.jsx';
 import Locations from './pages/locations/locations.jsx';
 import Contact from './pages/contact/contact.jsx';
+import Footer from './components/footer/footer.jsx';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
     <Route exact path="/locations" component={Locations} />
     <Route exact path="/contact" component={Contact} />
     </Switch>
+    <Footer />
     </div>
     </Router>
   );

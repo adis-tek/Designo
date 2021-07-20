@@ -57,6 +57,8 @@
           height: auto;
           text-align: left;
           @media (max-width: styles.$screen-lg-max) {
+            display: block;
+            padding: 30px 0px 0px 0px;
             text-align: center;
           }
         }
@@ -228,6 +230,7 @@
       }
       @media (max-width: styles.$screen-sm-max) {
         height: 865px;
+        border-radius: 0px;
       }
       .talent-image {
         object-fit: cover;
