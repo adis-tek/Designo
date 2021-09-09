@@ -22,10 +22,6 @@ function Contact() {
     const [phone, setPhone] = useState("");
     const [text, setText] = useState("");
     {/* */}
-    // const [nameValue, setNameValue] = useState(name.value.trim());
-    // const [emailValue, setEmailValue] = useState(email.value.trim());
-    // const [phoneValue, setPhoneValue] = useState(phone.value.trim());
-    // const [textValue, setTextValue] = useState(text.value.trim());
     const [formSuccess, setFormSuccess] = useState("");
 
     const toggleNameError = () => {
