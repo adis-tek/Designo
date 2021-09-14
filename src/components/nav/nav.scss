@@ -11,6 +11,7 @@
     align-items: center;
     width: 80vw;
     height: 100px;
+    max-width: 1092px;
     @media (max-width: styles.$screen-md-max) {
       width: 90vw;
     }

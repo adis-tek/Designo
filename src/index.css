@@ -1,7 +1,7 @@
 * {
   font-family: "Jost", sans-serif;
   /* border: 1px solid red; */
-  /* border: none; */
+  border: none;
   margin: 0px;
   padding: 0px;
   z-index: 0;
@@ -81,7 +81,7 @@ a {
   margin: 0px;
   padding: 0px;
 }
-  
+
 input {
   position: relative;
   display: flex;

@@ -179,7 +179,7 @@
             margin: 0px 0px 0px 40px;
             width: 150px;
             color: styles.$white;
-            opacity: 50%;
+            opacity: 0.5;
             letter-spacing: 2px;
             text-align: right;
             @media screen and (max-width: styles.$screen-lg-max) {
@@ -248,7 +248,7 @@
               position: relative;
               display: flex;
               color: styles.$white;
-              opacity: 50%;
+              opacity: 0.5;
               font-size: 14px;
               letter-spacing: 1.5px;
               margin: 0px 0px 7.5px 0px;
@@ -257,7 +257,7 @@
               position: relative;
               display: flex;
               color: styles.$white;
-              opacity: 50%;
+              opacity: 0.5;
               font-size: 14px;
               font-weight: normal;
               letter-spacing: 1.5px;
