@@ -1,4 +1,4 @@
-@use '../../styles';
+@use "../../styles";
 
 .design-container {
   @include styles.flexCenter(center, column);
@@ -149,7 +149,7 @@
               text-transform: uppercase;
               width: 100%;
               align-self: center;
-              margin: 20px 0px 0px 0px;
+              margin: 20px 0px 7.5px 0px;
               @media (max-width: styles.$screen-md-max) {
                 margin: 35px 0px 0px 0px;
               }
