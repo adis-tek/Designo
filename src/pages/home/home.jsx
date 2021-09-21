@@ -1,5 +1,6 @@
 import React from 'react';
 import './home.scss';
+import { NavLink } from 'react-router-dom';
 import phone from '../../assets/home/desktop/image-hero-phone.png';
 import darkCircle from '../../assets/home/desktop/bg-pattern-hero-home.svg';
 import WebDesign from '../../assets/home/desktop/image-web-design-large.jpg';
@@ -28,7 +29,9 @@ function home() {
             <h1 className="banner-header">Award-winning custom designs and digital branding solutions</h1>
             <p className="banner-description">With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, 
             and engaging brand experiences. Find out more about our services.</p>
+            <NavLink to="/about">
             <button className="banner-button"><h4 className="button-text">LEARN MORE</h4></button>
+            </NavLink>
             </div>
             </div>
 
@@ -39,7 +42,9 @@ function home() {
             <div className="web-design">
             <div className="image-text-container">
             <h1 className="image-text" id="header">Web Design</h1>
+            <NavLink to="/web-design">
             <h3 className="image-text" id="subtitle">View Projects <img src={rightArrow} /></h3>
+            </NavLink>
             </div>
             </div>
             
@@ -47,14 +52,18 @@ function home() {
             <div className="app-design">
             <div className="image-text-container">
             <h1 className="image-text" id="header">App Design</h1>
+            <NavLink to="/app-design">
             <h3 className="image-text" id="subtitle">View Projects <img src={rightArrow} /></h3>
+            </NavLink>
             </div>
             </div>
             
             <div className="graphic-design">
             <div className="image-text-container">
             <h1 className="image-text" id="header">Graphic Design</h1>
+            <NavLink to="/graphic-design">
             <h3 className="image-text" id="subtitle">View Projects <img src={rightArrow} /></h3>
+            </NavLink>
             </div>
             </div>
             </div>
