@@ -1,4 +1,4 @@
-@use '../../styles';
+@use "../../styles";
 
 .locations-container {
   @include styles.flexCenter(center, column);
@@ -120,7 +120,7 @@
           width: auto;
           height: 326px;
           object-fit: cover;
-          margin: 0px 35px 0px 0px;
+          margin: 0px 0px 0px 35px;
           border-radius: 15px;
           @media (max-width: styles.$screen-lg-max) {
             display: none;
