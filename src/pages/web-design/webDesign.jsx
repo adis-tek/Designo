@@ -39,6 +39,10 @@ function webDesign() {
         <img src={Express} alt="project" className="card-image" />
         <h3 className="card-title">Express</h3>
         <p className="card-description">A multi-carrier shipping website for ecommerce businesses</p>
+        <div className="tablet-row">
+        <h3 className="tablet-card-title">Express</h3>
+        <p className="tablet-card-description">A multi-carrier shipping website for ecommerce businesses</p>
+        </div>
         </div>
 
         <div class="card">
