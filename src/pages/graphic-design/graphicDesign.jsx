@@ -1,5 +1,6 @@
 import React from 'react';
 import './graphic-design.scss';
+import { NavLink } from 'react-router-dom';
 import CTACircles from '../../assets/web-design/desktop/bg-pattern-intro-web.svg';
 import TwoCircles from '../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg';
 import TimBrown from '../../assets/graphic-design/desktop/image-change.jpg';
@@ -66,14 +67,18 @@ function graphicDesign() {
         <div className="app-design">
             <div className="image-text-container">
             <h1 className="image-text">App Design</h1>
+            <NavLink to="/app-design">
             <h3 className="image-text">View Projects <img src={rightArrow} /></h3>
+            </NavLink>
         </div>
         </div>
             
         <div className="web-design">
             <div className="image-text-container">
             <h1 className="image-text">Web Design</h1>
+            <NavLink to="/web-design">
             <h3 className="image-text">View Projects <img src={rightArrow} /></h3>
+            </NavLink>
         </div>
         </div>
 

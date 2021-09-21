@@ -1,5 +1,6 @@
 import React from 'react';
 import './app-design.scss';
+import { NavLink } from 'react-router-dom';
 import CTACircles from '../../assets/web-design/desktop/bg-pattern-intro-web.svg';
 import Airfilter from '../../assets/app-design/desktop/image-airfilter.jpg';
 import Eyecam from '../../assets/app-design/desktop/image-eyecam.jpg';
@@ -75,14 +76,18 @@ function appDesign() {
         <div className="web-design">
             <div className="image-text-container">
             <h1 className="image-text">Web Design</h1>
+            <NavLink to="/web-design">
             <h3 className="image-text">View Projects <img src={rightArrow} /></h3>
+            </NavLink>
         </div>
         </div>
             
         <div className="graphic-design">
             <div className="image-text-container">
             <h1 className="image-text">Graphic Design</h1>
+            <NavLink to="/graphic-design">
             <h3 className="image-text">View Projects <img src={rightArrow} /></h3>
+            </NavLink>
         </div>
         </div>
 

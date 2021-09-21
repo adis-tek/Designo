@@ -1,5 +1,6 @@
 import React from 'react';
 import './web-design.scss';
+import { NavLink } from 'react-router-dom';
 import CTACircles from '../../assets/web-design/desktop/bg-pattern-intro-web.svg';
 import Express from '../../assets/web-design/desktop/image-express.jpg';
 import Transfer from '../../assets/web-design/desktop/image-transfer.jpg';
@@ -82,14 +83,18 @@ function webDesign() {
         <div className="app-design">
             <div className="image-text-container">
             <h1 className="image-text">App Design</h1>
+            <NavLink to="/app-design">
             <h3 className="image-text">View Projects <img src={rightArrow} /></h3>
+            </NavLink>
         </div>
         </div>
             
         <div className="graphic-design">
             <div className="image-text-container">
             <h1 className="image-text">Graphic Design</h1>
+            <NavLink to="/graphic-design">
             <h3 className="image-text">View Projects <img src={rightArrow} /></h3>
+            </NavLink>
         </div>
         </div>
 
