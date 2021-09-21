@@ -1,5 +1,6 @@
 import React from 'react';
 import './footer.scss';
+import { NavLink } from 'react-router-dom';
 import CTACircles from '../../assets/shared/desktop/bg-pattern-call-to-action.svg';
 import Logo from '../../assets/shared/desktop/logo-light.png';
 import Facebook from '../../assets/shared/desktop/icon-facebook.svg';
@@ -26,7 +27,9 @@ function Footer() {
             <p className="banner-description">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
             </div>
             <button className="banner-button">
+            <NavLink to="/contact">
             <h3 className="button-text">GET IN TOUCH</h3>
+            </NavLink>
             </button>
             <div className="circles-container">
             <img src={CTACircles} alt="circles" className="cta-banner-circles" />
@@ -38,9 +41,15 @@ function Footer() {
                 <img src={Logo} alt="Designo Logo" className="footer-logo" />
                 <div className="footer-hr-md" />
                 <ul className="links-container">
+                    <NavLink to="/about">
                     <li className="link">OUR COMPANY</li>
+                    </NavLink>
+                    <NavLink to="/locations">
                     <li className="link">LOCATION</li>
+                    </NavLink>
+                    <NavLink to="/contact">
                     <li className="link">CONTACT</li>
+                    </NavLink>
                 </ul>
             </div>
             <div className="footer-hr" />
