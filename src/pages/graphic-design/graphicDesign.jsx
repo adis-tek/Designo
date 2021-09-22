@@ -83,12 +83,6 @@ function graphicDesign() {
         </div>
 
         </div>
-
-        App Design
-        View Projects
-        
-        Graphic Design
-        View Projects
         </body>
     </div>
 </>
