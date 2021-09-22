@@ -1,6 +1,7 @@
 import React from 'react';
 import './home.scss';
 import { NavLink } from 'react-router-dom';
+import leaf from '../../assets/shared/desktop/bg-pattern-leaf.svg';
 import phone from '../../assets/home/desktop/image-hero-phone.png';
 import darkCircle from '../../assets/home/desktop/bg-pattern-hero-home.svg';
 import WebDesign from '../../assets/home/desktop/image-web-design-large.jpg';
@@ -21,6 +22,8 @@ function home() {
         
         <title>Designo Agency</title>
         </head>
+        <img src={leaf} className="background-leaf-one" />
+        <img src={leaf} className="background-leaf-two" />
             <body className="home-body">
             <div className="home-banner">
             <img src={phone} alt="iPhone" className="iphone" />
