@@ -150,9 +150,23 @@
         width: 80%;
         height: 75%;
         background-repeat: no-repeat;
+        background-size: cover;
         object-fit: cover;
         border-radius: 20px;
         margin: 0px 30px 0px 0px;
+        @media (max-width: styles.$screen-lg-max) {
+          background-size: 100%;
+          background-position: center;
+          margin: 0px 0px 0px 0px;
+        }
+        @media (max-width: styles.$screen-md-max) {
+          height: 100%;
+          margin: 30px 0px 0px 0px;
+        }
+        @media (max-width: styles.$screen-sm-max) {
+          background-image: url("../../assets/home/mobile/image-app-design.jpg");
+          width: 90%;
+        }
         .image-text-container {
           position: relative;
           @include styles.flexCenter(center, column);
@@ -179,8 +193,22 @@
         width: 80%;
         height: 75%;
         background-repeat: no-repeat;
+        background-size: cover;
         object-fit: cover;
         border-radius: 20px;
+        @media (max-width: styles.$screen-lg-max) {
+          background-size: 100%;
+          background-position: center;
+          margin: 0px 0px 0px 0px;
+        }
+        @media (max-width: styles.$screen-md-max) {
+          height: 100%;
+          margin: 30px 0px 0px 0px;
+        }
+        @media (max-width: styles.$screen-sm-max) {
+          background-image: url("../../assets/home/mobile/image-graphic-design.jpg");
+          width: 90%;
+        }
         .image-text-container {
           position: relative;
           @include styles.flexCenter(center, column);

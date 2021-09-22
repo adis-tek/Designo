@@ -101,6 +101,7 @@
         width: 80%;
         height: 75%;
         background-repeat: no-repeat;
+        background-size: cover;
         object-fit: cover;
         border-radius: 20px;
         @media (max-width: styles.$screen-lg-max) {
@@ -142,6 +143,7 @@
         width: 80%;
         height: 75%;
         background-repeat: no-repeat;
+        background-size: cover;
         object-fit: cover;
         border-radius: 20px;
         @media (max-width: styles.$screen-lg-max) {
