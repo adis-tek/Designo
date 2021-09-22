@@ -1,6 +1,7 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import UtilScroll from './utilScroll';
 import Nav from './components/nav/nav.jsx';
 import Home from './pages/home/home.jsx';
 import WebDesign from './pages/web-design/webDesign.jsx';
@@ -15,6 +16,7 @@ function App() {
   return (
     <Router>
     <div className="App">
+    <UtilScroll />
     <Nav />
     <Switch>
     <Route exact path="/" component={Home} />
