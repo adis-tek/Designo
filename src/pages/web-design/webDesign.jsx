@@ -108,7 +108,7 @@ function webDesign() {
             <div className="image-text-container">
             <h1 className="image-text">App Design</h1>
             <NavLink to="/app-design">
-            <h3 className="image-text">View Projects <img src={rightArrow} /></h3>
+            <h3 className="image-text-link">View Projects <img src={rightArrow} /></h3>
             </NavLink>
         </div>
         </div>
@@ -117,7 +117,7 @@ function webDesign() {
             <div className="image-text-container">
             <h1 className="image-text">Graphic Design</h1>
             <NavLink to="/graphic-design">
-            <h3 className="image-text">View Projects <img src={rightArrow} /></h3>
+            <h3 className="image-text-link">View Projects <img src={rightArrow} /></h3>
             </NavLink>
         </div>
         </div>

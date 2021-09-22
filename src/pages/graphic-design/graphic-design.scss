@@ -220,6 +220,15 @@
             text-align: center;
             color: white;
             margin: 30px 0px 0px 0px;
+            @media (max-width: 390px) {
+              font-size: 37px;
+            }
+          }
+          .image-text-link {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin: 30px 0px 0px 0px;
           }
         }
       }
@@ -257,6 +266,15 @@
             background-color: rgba(231, 129, 107, 0.7);
           }
           .image-text {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin: 30px 0px 0px 0px;
+            @media (max-width: 390px) {
+              font-size: 37px;
+            }
+          }
+          .image-text-link {
             position: relative;
             text-align: center;
             color: white;

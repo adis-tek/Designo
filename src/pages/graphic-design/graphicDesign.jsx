@@ -80,7 +80,7 @@ function graphicDesign() {
             <div className="image-text-container">
             <h1 className="image-text">App Design</h1>
             <NavLink to="/app-design">
-            <h3 className="image-text">View Projects <img src={rightArrow} /></h3>
+            <h3 className="image-text-link">View Projects <img src={rightArrow} /></h3>
             </NavLink>
         </div>
         </div>
@@ -89,7 +89,7 @@ function graphicDesign() {
             <div className="image-text-container">
             <h1 className="image-text">Web Design</h1>
             <NavLink to="/web-design">
-            <h3 className="image-text">View Projects <img src={rightArrow} /></h3>
+            <h3 className="image-text-link">View Projects <img src={rightArrow} /></h3>
             </NavLink>
         </div>
         </div>
