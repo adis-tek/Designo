@@ -49,12 +49,20 @@ function webDesign() {
         <img src={Transfer} alt="project" className="card-image" />
         <h3 className="card-title">Transfer</h3>
         <p className="card-description">Site for low-cost money transfers and sending money within seconds</p>
+        <div className="tablet-row">
+        <h3 className="tablet-card-title">Transfer</h3>
+        <p className="tablet-card-description">Site for low-cost money transfers and sending money within seconds</p>
+        </div>
         </div>
 
         <div class="card">
         <img src={Photon} alt="project" className="card-image" />
         <h3 className="card-title">Photon</h3>
         <p className="card-description">A state-of-the-art music player with high-resolution audio and DSP effects</p>
+        <div className="tablet-row">
+        <h3 className="tablet-card-title">Photon</h3>
+        <p className="tablet-card-description">A state-of-the-art music player with high-resolution audio and DSP effects</p>
+        </div>
         </div>
 
         </div>
@@ -64,18 +72,30 @@ function webDesign() {
         <img src={Builder} alt="project" className="card-image" />
         <h3 className="card-title">Builder</h3>
         <p className="card-description">Connects users with local contractors based on their location</p>
+        <div className="tablet-row">
+        <h3 className="tablet-card-title">Builder</h3>
+        <p className="tablet-card-description">Connects users with local contractors based on their location</p>
+        </div>
         </div>
 
         <div class="card">
         <img src={Blogr} alt="project" className="card-image" />
         <h3 className="card-title">Blogr</h3>
         <p className="card-description">Blogr is a platform for creating an online blog or publication</p>
+        <div className="tablet-row">
+        <h3 className="tablet-card-title">Blogr</h3>
+        <p className="tablet-card-description">Blogr is a platform for creating an online blog or publication</p>
+        </div>
         </div>
 
         <div class="card">
         <img src={Camp} alt="project" className="card-image" />
         <h3 className="card-title">Camp</h3>
         <p className="card-description">Get expert training in coding, data, design, and digital marketing</p>
+        <div className="tablet-row">
+        <h3 className="tablet-card-title">Camp</h3>
+        <p className="tablet-card-description">Get expert training in coding, data, design, and digital marketing</p>
+        </div>
         </div>
 
         </div>

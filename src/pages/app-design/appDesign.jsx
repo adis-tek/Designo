@@ -38,18 +38,30 @@ function appDesign() {
         <img src={Airfilter} alt="project" className="card-image" />
         <h3 className="card-title">Airfilter</h3>
         <p className="card-description">Solving the problem of poor indoor air quality by filtering the air</p>
+        <div className="tablet-row">
+        <h3 className="tablet-card-title">Airfilter</h3>
+        <p className="tablet-card-description">Solving the problem of poor indoor air quality by filtering the air</p>
+        </div>
         </div>
 
         <div class="card">
         <img src={Eyecam} alt="project" className="card-image" />
         <h3 className="card-title">Eyecam</h3>
         <p className="card-description">Product that lets you edit your favorite photos and videos at any time</p>
+        <div className="tablet-row">
+        <h3 className="tablet-card-title">Eyecam</h3>
+        <p className="tablet-card-description">Product that lets you edit your favorite photos and videos at any time</p>
+        </div>
         </div>
 
         <div class="card">
         <img src={Faceit} alt="project" className="card-image" />
         <h3 className="card-title">Faceit</h3>
         <p className="card-description">Get to meet your favorite internet superstar with the faceit app</p>
+        <div className="tablet-row">
+        <h3 className="tablet-card-title">Faceit</h3>
+        <p className="tablet-card-description">Get to meet your favorite internet superstar with the faceit app</p>
+        </div>
         </div>
 
         </div>
@@ -59,12 +71,20 @@ function appDesign() {
         <img src={Todo} alt="project" className="card-image" />
         <h3 className="card-title">Todo</h3>
         <p className="card-description">A todo app that features cloud sync with light and dark mode</p>
+        <div className="tablet-row">
+        <h3 className="tablet-card-title">Todo</h3>
+        <p className="tablet-card-description">A todo app that features cloud sync with light and dark mode</p>
+        </div>
         </div>
 
         <div class="card">
         <img src={LoopStudios} alt="project" className="card-image" />
         <h3 className="card-title">Loopstudios</h3>
         <p className="card-description">A VR experience app made for Loopstudios</p>
+        <div className="tablet-row">
+        <h3 className="tablet-card-title">Loopstudios</h3>
+        <p className="tablet-card-description">A VR experience app made for Loopstudios</p>
+        </div>
         </div>
 
         </div>
