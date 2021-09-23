@@ -4,6 +4,18 @@
   @include styles.flexCenter(center, column);
   width: 100vw;
   height: auto;
+  .background-leaf-one {
+    position: absolute;
+    display: flex;
+    width: 1006px;
+    height: 594px;
+    top: 250px;
+    left: 0;
+    z-index: -1;
+    @media screen and (max-width: styles.$screen-lg-max) {
+      display: none;
+    }
+  }
   .design-body {
     position: relative;
     @include styles.flexCenter(center, column);

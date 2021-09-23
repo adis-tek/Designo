@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './contact.scss';
+import leaf from '../../assets/shared/desktop/bg-pattern-leaf.svg';
 import DarkCircle from '../../assets/about/desktop/bg-pattern-hero-about-desktop.svg';
 import Canada from '../../assets/shared/desktop/illustration-canada.svg';
 import Australia from '../../assets/shared/desktop/illustration-australia.svg';
@@ -120,6 +121,7 @@ function Contact() {
     
     <title>Contact Us</title>
     </head>
+    <img src={leaf} className="background-leaf-two" />
     <body className="contact-body">
 
         <div className="form-container">

@@ -1,6 +1,7 @@
 import React from 'react';
 import './web-design.scss';
 import { NavLink } from 'react-router-dom';
+import leaf from '../../assets/shared/desktop/bg-pattern-leaf.svg';
 import CTACircles from '../../assets/web-design/desktop/bg-pattern-intro-web.svg';
 import Express from '../../assets/web-design/desktop/image-express.jpg';
 import Transfer from '../../assets/web-design/desktop/image-transfer.jpg';
@@ -22,6 +23,7 @@ function webDesign() {
         
         <title>Web Design</title>
         </head>
+        <img src={leaf} className="background-leaf-one" />
         <body className="design-body">
 
         <div className="top-banner">

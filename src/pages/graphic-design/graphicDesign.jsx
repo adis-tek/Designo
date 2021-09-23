@@ -1,6 +1,7 @@
 import React from 'react';
 import './graphic-design.scss';
 import { NavLink } from 'react-router-dom';
+import leaf from '../../assets/shared/desktop/bg-pattern-leaf.svg';
 import CTACircles from '../../assets/web-design/desktop/bg-pattern-intro-web.svg';
 import TwoCircles from '../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg';
 import TimBrown from '../../assets/graphic-design/desktop/image-change.jpg';
@@ -20,6 +21,7 @@ function graphicDesign() {
         
         <title>App Design</title>
         </head>
+        <img src={leaf} className="background-leaf-one" />
         <body className="design-body">
 
         <div className="top-banner">

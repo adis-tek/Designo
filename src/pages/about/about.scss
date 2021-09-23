@@ -3,6 +3,31 @@
 .about-container {
   @include styles.flexCenter(center, column);
   width: 100vw;
+  .background-leaf-one {
+    position: absolute;
+    display: flex;
+    width: 1006px;
+    height: 594px;
+    top: 400px;
+    left: 0;
+    z-index: -1;
+    @media screen and (max-width: styles.$screen-lg-max) {
+      display: none;
+    }
+  }
+  .background-leaf-two-about {
+    position: absolute;
+    display: flex;
+    width: 1006px;
+    height: 594px;
+    top: 1625px;
+    right: -250px;
+    z-index: -1;
+    transform: scaleX(-1);
+    @media screen and (max-width: styles.$screen-lg-max) {
+      display: none;
+    }
+  }
   .about-body {
     position: relative;
     @include styles.flexCenter(center, column);

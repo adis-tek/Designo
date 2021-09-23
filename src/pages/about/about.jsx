@@ -1,5 +1,6 @@
 import React from 'react';
 import './about.scss';
+import leaf from '../../assets/shared/desktop/bg-pattern-leaf.svg';
 import BannerImage from '../../assets/about/desktop/image-about-hero.jpg';
 import BannerImageTablet from '../../assets/about/tablet/image-about-hero.jpg';
 import BannerImageMobile from '../../assets/about/mobile/image-about-hero.jpg';
@@ -29,6 +30,8 @@ function about() {
         
         <title>Designo Agency</title>
         </head>
+        <img src={leaf} className="background-leaf-one" />
+        <img src={leaf} className="background-leaf-two-about" />
         <body className="about-body">
         
 <div className="top-banner">

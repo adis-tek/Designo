@@ -13,6 +13,9 @@
     height: 1000px;
     margin: 200px 0px 0px 0px;
   }
+  .bottom-banner-off {
+    display: none;
+  }
   .bottom-banner {
     position: relative;
     @include styles.flexCenter(space-around, row);

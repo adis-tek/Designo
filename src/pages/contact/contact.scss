@@ -1,8 +1,21 @@
-@use '../../styles';
+@use "../../styles";
 
 .contact-container {
   @include styles.flexCenter(center, column);
   width: 100vw;
+  .background-leaf-two {
+    position: absolute;
+    display: flex;
+    width: 1006px;
+    height: 594px;
+    top: 740px;
+    right: 0;
+    z-index: -1;
+    transform: scaleX(-1);
+    @media screen and (max-width: styles.$screen-lg-max) {
+      display: none;
+    }
+  }
   .contact-body {
     position: relative;
     @include styles.flexCenter(center, column);
