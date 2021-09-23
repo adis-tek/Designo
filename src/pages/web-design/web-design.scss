@@ -155,6 +155,15 @@
       @include styles.flexCenter(space-between, row);
       width: 100%;
       height: 450px;
+      @media (max-width: styles.$screen-lg-max) {
+        @include styles.flexCenter(center, column);
+      }
+      @media (max-width: styles.$screen-md-max) {
+        margin: 0px 0px 120px 0px;
+      }
+      @media (max-width: styles.$screen-sm-max) {
+        margin: 0px 0px 120px 0px;
+      }
       .app-design {
         position: relative;
         @include styles.flexCenter(center, column);

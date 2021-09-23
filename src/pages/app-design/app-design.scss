@@ -105,6 +105,13 @@
       margin: 0px 0px 0px 0px;
       @media (max-width: styles.$screen-lg-max) {
         @include styles.flexCenter(center, column);
+        margin: 0px 0px 90px 0px;
+      }
+      @media (max-width: styles.$screen-md-max) {
+        margin: 0px 0px 120px 0px;
+      }
+      @media (max-width: styles.$screen-md-max) {
+        margin: 0px 0px 120px 0px;
       }
       .web-design {
         position: relative;
