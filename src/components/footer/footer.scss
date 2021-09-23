@@ -89,6 +89,14 @@
       border-radius: 7.5px;
       margin: 0px 40px 0px 0px;
       z-index: 9999;
+      &:hover {
+        background-color: styles.$light-peach;
+        color: white;
+        @media (max-width: styles.$screen-lg-max) {
+          background-color: white;
+          color: black;
+        }
+      }
       @media (max-width: styles.$screen-lg-max) {
         width: 152px;
         height: 56px;
@@ -290,6 +298,7 @@
         .icon {
           position: relative;
           margin: 0px 12.5px;
+          cursor: pointer;
         }
       }
     }
