@@ -27,7 +27,7 @@ function Footer() {
             <p className="banner-description">Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
             </div>
             <button className="banner-button">
-            <NavLink to="/contact">
+            <NavLink className="cta-link" to="/contact">
             <h3 className="button-text">GET IN TOUCH</h3>
             </NavLink>
             </button>
