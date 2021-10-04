@@ -29,7 +29,6 @@ function graphicDesign() {
         <p className="banner-description">We deliver eye-catching branding materials that are tailored to meet your business objectives.</p>
         <div className="circles-container">
             <img src={CTACircles} alt="circles" className="cta-banner-circles" />
-            <img src={TwoCircles} alt="circles" className="two-circles-mobile" />
         </div>
         </div>
 
