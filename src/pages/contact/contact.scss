@@ -33,6 +33,7 @@
       width: 100%;
       height: 480px;
       background-color: styles.$peach;
+      border-radius: 20px;
       @media (max-width: styles.$screen-lg-max) {
         @include styles.flexCenter(flex-start, column);
         height: 711px;
