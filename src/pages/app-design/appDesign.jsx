@@ -3,6 +3,7 @@ import './app-design.scss';
 import { NavLink } from 'react-router-dom';
 import leaf from '../../assets/shared/desktop/bg-pattern-leaf.svg';
 import CTACircles from '../../assets/web-design/desktop/bg-pattern-intro-web.svg';
+import TwoCircles from '../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg';
 import Airfilter from '../../assets/app-design/desktop/image-airfilter.jpg';
 import Eyecam from '../../assets/app-design/desktop/image-eyecam.jpg';
 import Faceit from '../../assets/app-design/desktop/image-faceit.jpg';
@@ -30,6 +31,7 @@ function appDesign() {
         <p className="banner-description">Our mobile designs bring intuitive digital solutions to your customers right at their fingertips.</p>
         <div className="circles-container">
             <img src={CTACircles} alt="circles" className="cta-banner-circles" />
+            <img src={TwoCircles} alt="circles" className="two-circles-mobile" />
         </div>
         </div>
 

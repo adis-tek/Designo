@@ -3,6 +3,7 @@ import './web-design.scss';
 import { NavLink } from 'react-router-dom';
 import leaf from '../../assets/shared/desktop/bg-pattern-leaf.svg';
 import CTACircles from '../../assets/web-design/desktop/bg-pattern-intro-web.svg';
+import TwoCircles from '../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg';
 import Express from '../../assets/web-design/desktop/image-express.jpg';
 import Transfer from '../../assets/web-design/desktop/image-transfer.jpg';
 import Photon from '../../assets/web-design/desktop/image-photon.jpg';
@@ -31,6 +32,7 @@ function webDesign() {
         <p className="banner-description">We build websites that serve as powerful marketing tools and bring memorable brand experiences.</p>
         <div className="circles-container">
             <img src={CTACircles} alt="circles" className="cta-banner-circles" />
+            <img src={TwoCircles} alt="circles" className="two-circles-mobile" />
         </div>
         </div>
 
