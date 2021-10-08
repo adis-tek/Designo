@@ -1,3 +1,23 @@
+# Designo
+This site is an imaginary design studio that specializes in web design, graphic design, and app design.
+## Features
+* A multi-page design that showcases different design projects.
+* A fully mobile-responsive design from desktop to tablet and to mobile.
+* Layering images and elements on top of each other to create a sophisticated look.
+* A small form that gives real-time feedback on your input.
+
+## Technology
+* This app was built using the React framework.
+* Sass styling, repeatable mixins, and variables used for additional reusability.
+* React Router is an additional dependency used for page navigation.
+
+## Lessons Learned
+* How to create a mobile responsive layout for multiple pages.
+* How to verify a short form in real-time.
+* How to layer elements on top of each other.
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
