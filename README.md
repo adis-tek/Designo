@@ -14,7 +14,7 @@ This site is an imaginary design studio that specializes in web design, graphic 
 ## Lessons Learned
 * How to create a mobile responsive layout for multiple pages.
 * How to verify a short form in real-time.
-* How to layer elements on top of each other.
+* How to layer elements on top of each other in an intricate fashion.
 
 ---
 
