@@ -1,4 +1,4 @@
-# Designo Design Studio
+# Designo - A Design Studio
 This site is an imaginary design studio that specializes in web design, graphic design, and app design.
 ## Features
 * A multi-page design that showcases different design projects.
